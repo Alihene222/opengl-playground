@@ -1,0 +1,2 @@
+#!/bin/bash
+clang++ -Wall -Wextra -Wpedantic -iquote"src" -L"lib" -I"include" src/main.cpp src/gfx/window.cpp src/gfx/vertex_buffer.cpp src/gfx/vertex_array.cpp src/gfx/texture.cpp src/gfx/shader.cpp src/gfx/framebuffer.cpp src/ext/glad.c src/ext/stb.cpp -o bin/application -lglfw3
